@@ -3,47 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Brennan Trump's Portfolio - Senior CS Student | Software Developer">
+    <meta name="keywords" content="Brennan Trump, Software Developer, Portfolio, Computer Science, FullMotion">
     <title>Brennan's Portfolio</title>
     <style>
         body {
-            font-family: Arial, sans-serif; /* Sets a readable font */
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            display: flex;
-            justify-content: center; /* Centers the content wrapper horizontally */
-            align-items: center; /* Centers the content wrapper vertically */
-            height: 100vh; /* Uses full view height */
-            background: #f4f4f4; /* A light grey background */
+            background: #f4f4f4;
+        }
+        nav {
+            background: #333;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
         }
         .content {
-            width: 60%; /* Limits the content width to 60% of the view width */
-            max-width: 800px; /* Ensures content width does not exceed 800px */
+            max-width: 800px;
+            margin: 40px auto;
             padding: 20px;
-            background: white; /* Sets a white background for the content area */
-            box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Adds subtle shadow around the content box */
-            margin: 20px; /* Adds margin around the content box */
-            border-radius: 8px; /* Rounds the corners of the content box */
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        .project img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .cta {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .cta a {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        @media (max-width: 768px) {
+            .content {
+                width: 90%;
+            }
         }
     </style>
 </head>
 <body>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
     <div class="content">
         <h1>Welcome to My Portfolio</h1>
-        <h2>About Me</h2>
-        <p>Hello, my name is Brennan Trump. I am a senior at Old Dominion University pursuing a Bachelor's degree in Computer Science. I am passionate about software development and eager to enhance my skills in software testing. My interests include algorithm design, system architecture, and the integration of software applications in practical settings.</p>
+        <h2 id="about">About Me</h2>
+        <p>Hello, my name is Brennan Trump. I am a senior at Old Dominion University pursuing a Bachelor's degree in Computer Science. I am passionate about software development and eager to enhance my skills in software testing.</p>
 
-        <h2>My Projects</h2>
-        <p>One of my significant projects is FullMotion, a tool designed for personal trainers and physical therapists to track and plan workouts effectively using advanced software solutions. This project allowed me to apply my software development skills in a real-world application, enhancing my experience with client-focused software solutions. Working in a team, I also developed strong collaborative skills, essential for successful project outcomes.</p>
-
-        <h2>Learning Goals</h2>
-        <p>I am currently focused on expanding my knowledge in web development, particularly in HTML, to create more engaging and functional websites. By mastering HTML and CSS, I aim to build responsive and accessible web applications. Additionally, understanding JavaScript and frameworks like React will enable me to contribute more effectively to front-end development projects.</p>
-
-        <h2>Contact Me</h2>
-        <p>Feel free to reach out to me for any professional inquiries or collaboration opportunities. I am always looking to connect with industry professionals and peers who are passionate about technology and innovation. You can contact me via email or visit my GitHub profile to see my latest projects.</p>
+        <h2 id="projects">My Projects</h2>
+        <div class="project">
+            <img src="fullmotion-preview.png" alt="FullMotion Project">
+            <h3>FullMotion</h3>
+            <p>A software solution for personal trainers and physical therapists to track workout data.</p>
+            <a href="https://github.com/brennantrump/fullmotion">View on GitHub</a>
+        </div>
+        
+        <h2 id="learning-goals">Learning Goals</h2>
+        <p>I am currently focused on expanding my knowledge in web development, particularly in HTML, CSS, and JavaScript. I want to build engaging and functional web applications while also learning front-end frameworks like React.</p>
+        
+        <h2 id="contact">Contact Me</h2>
+        <p>Feel free to reach out for professional inquiries or collaborations.</p>
         <ul>
             <li>Email: <a href="mailto:Brennan.trump@gmail.com">Brennan.trump@gmail.com</a></li>
             <li>GitHub: <a href="https://github.com/brennantrump">Visit my GitHub</a></li>
         </ul>
+        <div class="cta">
+            <a href="mailto:Brennan.trump@gmail.com">Let's Connect</a>
+        </div>
     </div>
 </body>
 </html>
